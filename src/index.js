@@ -7,8 +7,8 @@ import { Product } from "./product";
 
 const App = () => {
     return (
-    <>
-        <div className="row">
+        <>
+            {/* <div className="row">
             <div className="col-12">
                 <Header />
             </div>
@@ -19,8 +19,17 @@ const App = () => {
                 </div>
             </div>
             <div className="col-12"><Footer /></div>
-        </div>
-    </>
+        </div> */}
+
+            <div className="row">
+                <div className="col-12">
+                    <Header />
+                </div>
+                <div className="col-12">
+                    <Product />
+                </div>
+            </div>
+        </>
     )
 
 }
