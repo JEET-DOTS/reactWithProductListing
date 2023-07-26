@@ -12,7 +12,7 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="javascript:void(0)">
-                                Features
+                                Game
                             </a>
                         </li>
                         <li className="nav-item">

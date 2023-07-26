@@ -7,6 +7,7 @@ import ReactPaginate from 'react-paginate';
 import 'slider-moon/dist/style.css'
 import "./assets/css/paginate.css"
 
+
 const Product = () => {
     const [isShow, setInvokeModal] = useState("");
     const [searchText, setSearchText] = useState("");

@@ -4,23 +4,12 @@ import { Header } from "./header";
 import { Sidebar } from "./sidebar";
 import { Footer } from "./footer";
 import { Product } from "./product";
+import {Game} from "./game"
+
 
 const App = () => {
     return (
         <>
-            {/* <div className="row">
-            <div className="col-12">
-                <Header />
-            </div>
-            <div className="col-12">
-                <div className="row">
-                    <div className="col-3"><Sidebar /></div>
-                    <div className="col-9"><Product/></div>
-                </div>
-            </div>
-            <div className="col-12"><Footer /></div>
-        </div> */}
-
             <div className="row">
                 <div className="col-12">
                     <Header />
@@ -28,6 +17,10 @@ const App = () => {
                 <div className="col-12">
                     <Product />
                 </div>
+                <div className="col-12 text-center">
+                    <Game/>
+                </div>
+                
             </div>
         </>
     )
