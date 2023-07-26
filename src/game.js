@@ -8,6 +8,7 @@ const Game = () => {
     const [ isTrue, setIsTrue ] = useState(true);
     const [ gameOver, setGameOver ] = useState(false);
     const [ lastWeener, setLastWeener ] = useState("");
+    const [ reload, setReload ] = useState(false);
 
     const tabOnGame = (e,index) => {
         if(!gameOver){
@@ -37,6 +38,7 @@ const Game = () => {
             setGameOver(true);
         }else{
             setGameOver(false);
+            setReload(true)
         }
     }
 
@@ -49,16 +51,19 @@ const Game = () => {
  return (
     <>
         <h1>Game</h1>
-        <p>{
+        <p>
+            {
             (gameOver) ? 
             <>
                 <Confetti/> 
                 The winner is : {lastWeener}
                 <br/>
                 <button className="btn btn-success" onClick={() => restartGame()  }> Restart Game </button>
-            </>  : ''
+            </>  : (reload) ? <button className="btn btn-danger" onClick={() => restartGame()  }> ReLoad Game </button> : ''
             }
-            </p>
+        </p>
+        
+
         <table style={{border: "1px solid",width: "50%",height: "200px",margin: "0 auto"}}>
             <tbody>
                 <tr key={"1"} style={{border: "1px solid"}}>
